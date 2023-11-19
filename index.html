@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="joao.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Taxa Metabólica Basal</title>
+</head>
+<body>
+<div class="container">
+    <h1>Calculadora de Taxa Metabólica Basal</h1>
+    <div class="input-container">
+        <label for="idade">Idade (anos): </label>
+        <input type="number" id="idade" placeholder="Insira sua idade">
+    </div>
+    <div class="input-container">
+        <label for="peso">Peso (kg): </label>
+        <input type="number" id="peso" placeholder="Insira seu peso">
+    </div>
+    <div class="input-container">
+        <label for="altura">Altura (cm): </label>
+        <input type="number" id="altura" placeholder="Insira sua altura">
+    </div>
+    <div class="radio-container">
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+    </div>
+    <button onclick="calcularTaxaMetabolica()">
+        <i class="fas fa-calculator"></i> Calcular
+    </button>
+    <div id="resultado"></div>
+    
+    <!-- Botão para alternar entre os modos claro e escuro -->
+    <button id="toggle-mode">
+        <i class="fas fa-adjust"></i> Alternar Modo
+    </button>
+
+    <!-- Chave PIX opcional -->
+    <div class="input-container">
+        <label for="chavePIX">Chave PIX : </label>
+        <input type="text" id="chavePIX" value="6ed8f7e5-6ca0-4af1-9de1-331500435599" readonly>
+        <small>Ajude a manter este serviço! Sua contribuição é opcional e valorizada.</small>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

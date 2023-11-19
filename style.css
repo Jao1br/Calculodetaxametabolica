@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título da Calculadora */
+.container h1 {
+    font-family: 'Roboto', sans-serif; /* Nova fonte para o título */
+    font-size: 28px; /* Tamanho do texto */
+    color: #ff6f61; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Área de Perguntas */
+#resultado {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffd54f; /* Cor de fundo mais chamativa */
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Cor do texto */
+}
+
+/* Botão no Modo Claro */
+body:not(.dark-mode) button {
+    background-color: #ff6f61;
+}
+
+/* Botão no Modo Escuro */
+body.dark-mode button {
+    background-color: #4a69bb;
+}
+
+/* Ícone no botão */
+button::before {
+    content: '\f071';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 8px;
+}
+
+/* Mais estilizações para o modo escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .input-container input {
+    border-color: #fff;
+}
+
+body.dark-mode #resultado {
+    background-color: #666; /* Cor de fundo diferente para o modo escuro */
+    color: #fff; /* Cor do texto no modo escuro */
+}
